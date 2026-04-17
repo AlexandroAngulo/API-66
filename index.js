@@ -8,7 +8,6 @@ app.use(morgan("dev"))
 app.use(indexRoute)
 
 
-
 const PORT = 3000
 
 app.listen(PORT,console.log("HTTP://LOCALHOST:"+PORT))
