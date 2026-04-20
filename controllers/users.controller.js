@@ -20,5 +20,8 @@ export const putUser = async (req, res) => {
     const user = await User.findByIdAndUpdate(req.params.id,{name, username, password}, {new: true})
     res.json(user)
 }
-export const delUser = async (req, res) => {}
+export const delUser = async (req, res) => {
+    const user = await User.findByIdAndDelete(req.params.id)
+    res.json(user)
+}
 

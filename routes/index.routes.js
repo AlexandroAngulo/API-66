@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { hola, ping, abc } from "../controllers/index.controllers.js";
+import { getUsers, getUser, postUser, putUser, delUser } from "../controllers/users.controller.js";
 
 const router = Router()
 
